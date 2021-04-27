@@ -1,0 +1,52 @@
+.menu-toggle {
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    right: 2rem;
+    z-index: 101;
+    &__lines {
+        background-color: #000;;
+        border-radius: 1px;
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -1px 0 0 -15px;
+        transition: height 100ms;
+        &:after, &:before {
+            content: '';
+            background-color: #000;
+            border-radius: 1px;
+            height: 3px;
+            width: 100%;
+            position: absolute;
+            left: 50%;
+            margin-left: -15px;
+            transition: all 200ms;
+        }
+        &:after {
+            top: -7px;
+        }
+        &:before {
+            bottom: -7px;
+        }
+    }
+    &_active {
+        > span {
+            height: 0;
+            &:after, &:before {
+                background-color: #fff;
+                top: 1px;
+            }
+            &:after {
+                transform: rotate(45deg);
+            }
+            &:before {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+

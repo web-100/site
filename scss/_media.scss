@@ -1,0 +1,261 @@
+// Media max-width: 1200px
+
+@media (max-width: 1244px) {
+    .container {
+        max-width: 970px;
+    }
+    .promo {
+        padding-bottom: 75rem;
+    }
+    .footer {
+        &__info {
+            margin-right: 7rem;
+        }
+    }
+    .nav-footer {
+        margin-right: 7rem;
+    }
+   
+}
+
+// Media max-width: 992px
+
+@media (max-width: 991.98px) {
+
+    .container {
+        max-width: 750px;
+    }
+    .promo {
+        padding-bottom: 60rem;
+    }
+    .plans {
+        padding-top: 10rem;
+        &__items {
+            justify-content: center;
+        }
+        &__column {
+            flex: 0 0 50%;
+            &:last-child {
+                margin-top: 5rem;
+            }
+        }
+    }
+
+
+}
+// Media max-width: 768px
+
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 540px;
+    }
+    .menu-toggle {
+        display: block;
+        
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        left: 0;
+        height: 9rem;
+        width: 100%;
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 10;
+        padding: 20px;
+        width: 50vw;
+        height: 100vh;
+        overflow: auto;
+        background-color: $mainColor;
+        transition: all 500ms;
+        &_active {
+            right: 0;
+            visibility: visible;
+            opacity: 1; 
+        }
+        &__overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #000000;
+            opacity: 0.7;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+        }
+        &__list {
+            height: 100%;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding-top: 17rem;
+
+        }
+
+        &__item {
+            margin-left: 0;
+            margin-top: 4.5rem;
+            font-size: 2.6rem;
+            line-height: 100%;
+            &:first-child {
+                margin-top: 0;
+            }
+            &_btn {
+                margin-top: 14rem;
+
+            }
+        }
+        &__btn {
+            font-size: 2.6rem;
+            line-height: 100%;
+            border: 1px solid transparent;
+            transition: all .5s ease-out;
+            &:hover {
+                color: white;
+                border-color: white;
+            }
+        }
+        &__link {
+            color: white;
+        }
+    }
+    .m-top {
+        margin-top: 9rem;
+    }
+    .promo {
+        padding-bottom: 58rem;
+        &__title {
+            font-size: 4.5rem;
+        }
+        &__img {
+            top: 36rem;
+        }
+    }
+    .plans {
+        
+        &__title {
+            font-size: 3.5rem;
+        }
+        &__items {
+            flex-direction: column;
+        }
+        &__column {
+            margin-top: 5rem;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+    .testimonials {
+        padding-top: 2rem;
+        &__items {
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+    .item-testimonial {
+        &__title {
+            font-size: 3.5rem;
+            text-align: center;
+        }
+        &_1 {
+            padding: 0;
+        }
+        &_4 {
+            margin-top: 4rem;
+        }
+    }
+    .footer {
+        &__wrapper {
+            // flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__info {
+            margin-right: 0;
+            flex: 0 0 50%;
+            margin-bottom: 5rem;
+        }
+    }
+    .nav-footer {
+        flex: 0 0 50%;
+        margin-right: 0;
+        &:nth-child(2) {
+            margin-bottom: 5rem;
+        }
+    }
+
+}
+// Media max-width: 576px
+
+@media (max-width: 575.98px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .menu {
+        width: 100%;
+    }
+    .promo {
+        padding-bottom: 42rem;
+        &__title {
+            font-size: 3rem;
+        }
+    }
+    .plans {
+        &__title {
+            font-size: 2.5rem;
+        }
+
+    }
+    .item-testimonial {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        &__title {
+            font-size: 2.5rem;
+        }
+    }
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+        }
+    }
+    .nav-footer {
+        margin-bottom: 5rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+@media (max-width: 440px) {
+
+    .promo {
+        padding-bottom: 37rem;
+        &__title {
+            font-size: 2.5rem;
+        }
+        &__buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__btn-main {
+            margin-right: 0;
+        }
+        &__btn-second {
+            margin-top: 2rem;
+        }
+        &__img {
+            top: 48rem;
+        }
+    }
+}
