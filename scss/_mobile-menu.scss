@@ -6,7 +6,7 @@
     right: 2rem;
     z-index: 101;
     &__lines {
-        background-color: #000;;
+        background-color: $mainColor;
         border-radius: 1px;
         height: 3px;
         width: 100%;
@@ -17,7 +17,7 @@
         transition: height 100ms;
         &:after, &:before {
             content: '';
-            background-color: #000;
+            background-color: $mainColor;
             border-radius: 1px;
             height: 3px;
             width: 100%;

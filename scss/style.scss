@@ -65,9 +65,7 @@ body {
 
     &__link {
         transition: all .5s ease-out;
-        &:hover {
-            color: $secondColor;
-        }
+
     }
 
     &__btn {
@@ -82,10 +80,7 @@ body {
         color: white;
         cursor: pointer;
         transition: all .5s ease-out;
-        &:hover {
-            background-color: $mainColor;
-            color: white;
-        }
+
     }
 }
 .promo {
@@ -132,11 +127,7 @@ body {
         margin-right: 1.6rem;
         border: 1px solid transparent;
         transition: all .5s ease-out;
-        &:hover {
-            color: white;
-            background-color: $mainColor;
-            border: 1px solid white;
-        }
+
     }
 
     &__btn-second {
@@ -150,10 +141,7 @@ body {
         border-radius: .8rem;
         border: 1px solid #C3C1CB;
         transition: all .5s ease-out;
-        &:hover {
-            color: white;
-            background-color: $secondColor;
-        }
+
     }
 
     &__img {
@@ -430,9 +418,7 @@ body {
         line-height: 150%;
         color: $mainColor;
         transition: all .5s ease-out;
-        &:hover {
-            color: $secondColor;
-        }
+
     }
 }
 .footer {
@@ -517,9 +503,7 @@ body {
         font-size: 1.5rem;
         line-height: 160%;
         transition: all .5s ease-out;
-        &:hover {
-            color: $secondColor;
-        }
+
     }
 }
 

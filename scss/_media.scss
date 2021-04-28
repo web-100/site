@@ -29,7 +29,7 @@
         padding-bottom: 60rem;
     }
     .plans {
-        padding-top: 10rem;
+        padding-top: 5rem;
         &__items {
             justify-content: center;
         }
@@ -39,6 +39,10 @@
                 margin-top: 5rem;
             }
         }
+    }
+    .testimonials {
+        padding-top: 0;
+        padding-bottom: 2rem;
     }
 
 
@@ -68,8 +72,8 @@
         visibility: hidden;
         opacity: 0;
         z-index: 10;
-        padding: 20px;
-        width: 50vw;
+        padding: 0 2rem 0 3rem;
+        width: 75vw;
         height: 100vh;
         overflow: auto;
         background-color: $mainColor;
@@ -92,8 +96,7 @@
         &__list {
             height: 100%;
             flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
+            justify-content: flex-start;          
             padding-top: 17rem;
 
         }
@@ -103,12 +106,14 @@
             margin-top: 4.5rem;
             font-size: 2.6rem;
             line-height: 100%;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #333;
             &:first-child {
                 margin-top: 0;
             }
             &_btn {
                 margin-top: 14rem;
-
+                border-bottom: 0;
             }
         }
         &__btn {
@@ -116,10 +121,6 @@
             line-height: 100%;
             border: 1px solid transparent;
             transition: all .5s ease-out;
-            &:hover {
-                color: white;
-                border-color: white;
-            }
         }
         &__link {
             color: white;
@@ -138,7 +139,7 @@
         }
     }
     .plans {
-        
+        padding-bottom: 2rem;
         &__title {
             font-size: 3.5rem;
         }
@@ -200,9 +201,6 @@
         width: 100%;
         padding: 0 10px;
     }
-    .menu {
-        width: 100%;
-    }
     .promo {
         padding-bottom: 42rem;
         &__title {
@@ -237,7 +235,9 @@
 }
 
 @media (max-width: 440px) {
-
+    .menu {
+        width: 100%;
+    }
     .promo {
         padding-bottom: 37rem;
         &__title {
@@ -256,6 +256,97 @@
         }
         &__img {
             top: 48rem;
+        }
+    }
+}
+// @media (hover: none){
+//     .menu {
+//         &__link {
+//             &:hover {
+//                 color: $mainColor;
+//             }
+          
+//         }
+//         &__btn {
+//             &:hover {
+//                 background-color: $secondColor;
+//                 color: white;
+//             }
+//         }
+//     }
+//     .promo {
+//         &__btn-main {
+//             &:hover {
+//                 background-color: $secondColor;
+//                 color: white;
+//                 border: 1px solid transparent;
+//             }
+//         }
+//         &__btn-second {
+//             &:hover {
+//                 background-color: $mainColor;
+//                 color: white;
+//             }
+//         }
+//     }
+//     .item-testimonial {
+//         &__link {
+//             &:hover {
+//                 color: $mainColor;
+//             }
+//         }
+//     }
+//     .nav-footer {
+//         &__link {
+//             &:hover {
+//                 color: $mainColor;
+//             }
+//         }
+//     }
+    
+// }
+
+@media (min-width: 991.98px) {
+    .menu {
+        &__link {
+            &:hover {
+                color: $secondColor;
+            }
+        }
+        &__btn {
+            &:hover {
+                background-color: $mainColor;
+                color: white;
+            }
+        }
+    }
+    .promo {
+        &__btn-main {
+            &:hover {
+                color: white;
+                background-color: $mainColor;
+                border: 1px solid white;
+            }
+        }
+        &__btn-second {
+            &:hover {
+                color: white;
+                background-color: $secondColor;
+            }
+        }
+    }
+    .item-testimonial {
+        &__link {
+            &:hover {
+                color: $secondColor;
+            }
+        }
+    }
+    .nav-footer {
+        &__link {
+            &:hover {
+                color: $secondColor;
+            }
         }
     }
 }
