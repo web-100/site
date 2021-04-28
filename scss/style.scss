@@ -388,7 +388,7 @@ body {
         font-weight: normal;
         font-size: 1.5rem;
         line-height: 160%;    
-        color: #4C4764;
+        color: $greyColor;
         margin-bottom: 0;
     }
 
@@ -406,7 +406,7 @@ body {
         font-size: 1.7rem;
         line-height: 176%;
         letter-spacing: 0.18px;
-        color: #4C4764;
+        color: $greyColor;
         
     }
 
@@ -424,7 +424,7 @@ body {
 .footer {
     padding: 6rem 0 5.8rem 0;
     background-color: #F8F8F9;
-    color: #4C4764;
+    color: $greyColor;
 
     &__wrapper {
         display: flex;
