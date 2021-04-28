@@ -297,6 +297,16 @@
             }
         }
     }
+    .footer {
+        &__icon-link {
+            img {
+                transition: all .3s ease-out;
+                &:hover {
+                    transform:translateY(-.2rem);
+                }
+            }
+        }
+    }
     .nav-footer {
         &__link {
             &:hover {
