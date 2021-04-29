@@ -44,7 +44,25 @@
         padding-top: 0;
         padding-bottom: 2rem;
     }
-
+    .footer {
+        padding: 3rem 0;
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__info {
+            margin-right: 0;
+            flex: 0 0 50%;
+            margin-bottom: 5rem;
+        }
+    }
+    .nav-footer {
+        flex: 0 0 50%;
+        margin-right: 0;
+        &:nth-child(2) {
+            margin-bottom: 5rem;
+        }
+    }
 
 }
 // Media max-width: 768px
@@ -62,8 +80,11 @@
         top: 0;
         z-index: 10;
         left: 0;
-        height: 9rem;
+        height: 5rem;
         width: 100%;
+        &__wrapper {
+            height: 5rem;
+        }
     }
     .menu {
         position: fixed;
@@ -129,15 +150,16 @@
         }
     }
     .m-top {
-        margin-top: 9rem;
+        margin-top: 5rem;
     }
     .promo {
-        padding-bottom: 58rem;
+        padding-bottom: 0;
         &__title {
             font-size: 4.5rem;
         }
         &__img {
-            top: 36rem;
+            position: static;
+            transform: translate(0, 0);
         }
     }
     .plans {
@@ -175,25 +197,7 @@
             margin-top: 4rem;
         }
     }
-    .footer {
-        &__wrapper {
-            // flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        &__info {
-            margin-right: 0;
-            flex: 0 0 50%;
-            margin-bottom: 5rem;
-        }
-    }
-    .nav-footer {
-        flex: 0 0 50%;
-        margin-right: 0;
-        &:nth-child(2) {
-            margin-bottom: 5rem;
-        }
-    }
+
 
 }
 // Media max-width: 576px
@@ -204,7 +208,6 @@
         padding: 0 10px;
     }
     .promo {
-        padding-bottom: 42rem;
         &__title {
             font-size: 3rem;
         }
@@ -241,7 +244,6 @@
         width: 100%;
     }
     .promo {
-        padding-bottom: 37rem;
         &__title {
             font-size: 2.5rem;
         }
@@ -255,9 +257,6 @@
         }
         &__btn-second {
             margin-top: 2rem;
-        }
-        &__img {
-            top: 48rem;
         }
     }
 }
